@@ -15,3 +15,8 @@ def contact():
 @app.route('/resume')
 def resume():
     return render_template('resume.html')
+
+
+@app.route('/project')
+def project():
+    return render_template('single-portfolio.html')
