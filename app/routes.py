@@ -17,6 +17,6 @@ def resume():
     return render_template('resume.html')
 
 
-@app.route('/project')
-def project():
-    return render_template('single-portfolio.html')
+@app.route('/project/<int:project_id>')
+def project(project_id):
+    return render_template('single-portfolio.html', id=project_id)

@@ -62,22 +62,22 @@
             <!-- Template Javascript Files
             ================================================== -->
             <!-- jquery -->
-            <script src="static/plugins/jQurey/jquery.min.js"></script>
+            <script src="{{ url_for('static', filename='/plugins/jQurey/jquery.min.js') }}"></script>
             <!-- Form Validation -->
-            <script src="static/plugins/form-validation/jquery.form.js"></script>
-            <script src="static/plugins/form-validation/jquery.validate.min.js"></script>
+            <script src="{{ url_for('static', filename='/plugins/form-validation/jquery.form.js') }}"></script>
+            <script src="{{ url_for('static', filename='/plugins/form-validation/jquery.validate.min.js') }}"></script>
             <!-- slick slider -->
-            <script src="static/plugins/slick/slick.min.js"></script>
+            <script src="{{ url_for('static', filename='/plugins/slick/slick.min.js') }}"></script>
             <!-- bootstrap js -->
-            <script src="static/plugins/bootstrap/bootstrap.min.js"></script>
+            <script src="{{ url_for('static', filename='/plugins/bootstrap/bootstrap.min.js') }}"></script>
             <!-- wow js -->
-            <script src="static/plugins/wow-js/wow.min.js"></script>
+            <script src="{{ url_for('static', filename='/plugins/wow-js/wow.min.js') }}"></script>
             <!-- slider js -->
-            <script src="static/plugins/slider/slider.js"></script>
+            <script src="{{ url_for('static', filename='/plugins/slider/slider.js') }}"></script>
             <!-- Fancybox -->
-            <script src="static/plugins/facncybox/jquery.fancybox.js"></script>
+            <script src="{{ url_for('static', filename='/plugins/facncybox/jquery.fancybox.js') }}"></script>
             <!-- template main js -->
-            <script src="static/js/main.js"></script>
+            <script src="{{ url_for('static', filename='/js/main.js') }}"></script>
             <script>
             // Add an event listener to all anchor links on the page
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {

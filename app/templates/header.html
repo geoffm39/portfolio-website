@@ -5,7 +5,7 @@
         ================================================== -->
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <link rel="icon" href="static/images/developer.png">
+        <link rel="icon" href="{{ url_for('static', filename='images/developer.png') }}">
         <title>Geoff Martin | Software Developer</title>
         <meta name="description" content="">
         <meta name="keywords" content="">
@@ -22,21 +22,21 @@
         <!-- Template CSS Files
         ================================================== -->
         <!-- Twitter Bootstrs CSS -->
-        <link rel="stylesheet" href="static/plugins/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='plugins/bootstrap/bootstrap.min.css') }}">
         <!-- Ionicons Fonts Css -->
-        <link rel="stylesheet" href="static/plugins/ionicons/ionicons.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='plugins/ionicons/ionicons.min.css') }}">
         <!-- animate css -->
-        <link rel="stylesheet" href="static/plugins/animate-css/animate.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='plugins/animate-css/animate.css') }}">
         <!-- Hero area slider css -->
-        <link rel="stylesheet" href="static/plugins/slider/slider.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='plugins/slider/slider.css') }}">
         <!-- slick slider -->
-        <link rel="stylesheet" href="static/plugins/slick/slick.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='plugins/slick/slick.css') }}">
         <!-- Fancybox -->
-        <link rel="stylesheet" href="static/plugins/facncybox/jquery.fancybox.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='plugins/facncybox/jquery.fancybox.css') }}">
         <!-- hover -->
-        <link rel="stylesheet" href="static/plugins/hover/hover-min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='plugins/hover/hover-min.css') }}">
         <!-- template main css file -->
-        <link rel="stylesheet" href="static/css/style.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
         <!-- icons for skills and tools from https://devicon.dev/ -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
@@ -57,7 +57,7 @@
             <div class="col-lg-12">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <a class="navbar-brand" href="{{ url_for('home') }}">
-                        <img src="static/images/logo.png" height="30px" alt="logo">
+                        <img src="{{ url_for('static', filename='images/logo.png') }}" height="30px" alt="logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
