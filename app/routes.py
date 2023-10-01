@@ -9,7 +9,7 @@ def home():
 
 @app.route('/contact')
 def contact():
-    return render_template('contact.html')
+    return render_template('contact.html', contact_page=True)
 
 
 @app.route('/resume')
@@ -19,4 +19,4 @@ def resume():
 
 @app.route('/project/<int:project_id>')
 def project(project_id):
-    return render_template('single-portfolio.html', id=project_id)
+    return render_template('base-project.html', id=project_id)
