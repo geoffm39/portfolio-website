@@ -35,12 +35,16 @@
     <div class="row">
       <div class="col-md-6 mb-5 mb-md-0">
         <div class="block">
-          <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">contact me</h2>
+            {% if sent_message %}
+                <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">message sent successfully</h2>
+            {% else %}
+                <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">contact me</h2>
+            {% endif %}
           <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
             Send me a message using the form bellow. <br>Or email me at <a href="mailto:geoffm39@gmail.com" style="color: #02bdd5">geoffm39@gmail.com</a>
           </p>
           <div class="contact-form">
-            <form id="contact-form" method="#" action="#" role="form">
+            <form id="contact-form" method="post" action="{{ url_for('contact') }}" role="form">
 
               <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
                 <input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
