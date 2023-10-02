@@ -1,0 +1,88 @@
+{% include "header.html" %}
+
+        <!-- 
+        ================================================== 
+            Global Page Section Start
+        ================================================== -->
+        <section class="global-page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block">
+                            <h2>Contact</h2>
+                            <ol class="breadcrumb list-inline text-center">
+                                <li class="list-inline-item">
+                                    <a href="{{ url_for('home') }}">
+                                        <i class="ion-ios-home"></i>
+                                        Home  &nbsp; &nbsp;/
+                                    </a>
+                                </li>
+                                <li class="active list-inline-item">Contact</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+<!-- 
+================================================== 
+    Contact Section Start
+================================================== -->
+<section id="contact-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mb-5 mb-md-0">
+        <div class="block">
+            {% if sent_message %}
+                <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">message sent successfully</h2>
+            {% else %}
+                <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">contact me</h2>
+            {% endif %}
+          <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
+            Send me a message using the form bellow. <br>Or email me at <a href="mailto:geoffm39@gmail.com" style="color: #02bdd5">geoffm39@gmail.com</a>
+          </p>
+          <div class="contact-form">
+            <form id="contact-form" method="post" action="{{ url_for('contact') }}" role="form">
+
+              <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
+                <input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
+              </div>
+
+              <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".8s">
+                <input type="email" placeholder="Your Email" class="form-control" name="email" id="email">
+              </div>
+
+              <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1s">
+                <input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
+              </div>
+
+              <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.2s">
+                <textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"></textarea>
+              </div>
+
+              <div id="success" class="success">
+                Thank you. The Mailman is on His Way :)
+              </div>
+
+              <div id="error" class="error">
+                Sorry, don't know what happened. Try later :(
+              </div>
+
+              <div id="submit" class="wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.4s">
+                <button type="submit" id="contact-submit" class="btn btn-default btn-send hvr-bounce-to-right"
+                  value="Send Message">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+        <div>
+            <img src="{{ url_for('static', filename='images/contact.svg') }}" width=400px alt="">
+        </div>
+    </div>
+  </div>
+</section>
+
+{% include "footer.html" %}

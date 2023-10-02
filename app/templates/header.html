@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <!-- Basic Page Needs
+        ================================================== -->
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="icon" href="{{ url_for('static', filename='images/developer.png') }}">
+        <title>Geoff Martin | Software Developer</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <!-- Mobile Specific Metas
+        ================================================== -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- theme meta -->
+        <meta name="theme-name" content="timer" />
+
+
+        <!-- Template CSS Files
+        ================================================== -->
+        <!-- Twitter Bootstrs CSS -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='plugins/bootstrap/bootstrap.min.css') }}">
+        <!-- Ionicons Fonts Css -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='plugins/ionicons/ionicons.min.css') }}">
+        <!-- animate css -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='plugins/animate-css/animate.css') }}">
+        <!-- Hero area slider css -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='plugins/slider/slider.css') }}">
+        <!-- slick slider -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='plugins/slick/slick.css') }}">
+        <!-- Fancybox -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='plugins/facncybox/jquery.fancybox.css') }}">
+        <!-- hover -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='plugins/hover/hover-min.css') }}">
+        <!-- template main css file -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+        <!-- icons for skills and tools from https://devicon.dev/ -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+        <!-- font awesome script -->
+        <script src="https://kit.fontawesome.com/a5f5612be0.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+
+<!--
+        ==================================================
+        Header Section Start
+        ================================================== -->
+<section class="top-bar animated-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="{{ url_for('home') }}">
+                        <img src="{{ url_for('static', filename='images/logo.png') }}" height="30px" alt="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class ="nav-item">
+                                {% if homepage %}
+                                    <a class="nav-link" href="#hero-area">Home</a>
+                                {% else %}
+                                    <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+                                {% endif %}
+                            </li>
+                            <li class="nav-item">
+                                {% if homepage %}
+                                    <a class="nav-link" href="#about">About</a>
+                                {% else %}
+                                    <a class="nav-link" href="{{ url_for('home') }}#about">About</a>
+                                {% endif %}
+                            </li>
+                            <li class="nav-item">
+                                {% if homepage %}
+                                    <a class="nav-link" href="#feature">Skills</a>
+                                {% else %}
+                                    <a class="nav-link" href="{{ url_for('home') }}#feature">Skills</a>
+                                {% endif %}
+                            </li>
+                            <li class="nav-item">
+                                {% if homepage %}
+                                    <a class="nav-link" href="#works">Projects</a>
+                                {% else %}
+                                    <a class="nav-link" href="{{ url_for('home') }}#works">Projects</a>
+                                {% endif %}
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('resume') }}">Resume</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>

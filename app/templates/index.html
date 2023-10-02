@@ -1,0 +1,359 @@
+{% include "header.html" %}
+
+<!--
+==================================================
+Hero Area Start
+================================================== -->
+<section id="hero-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="block wow fadeInUp" data-wow-delay=".3s">
+
+          <!-- Slider -->
+          <section class="cd-intro">
+            <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".4s">
+              <span>HI, MY NAME IS GEOFF. I'M A</span><br>
+              <span class="cd-words-wrapper">
+                <b class="is-visible">SOFTWARE DEVELOPER</b>
+              </span>
+            </h1>
+          </section> <!-- cd-intro -->
+          <!-- /.slider -->
+          <h2 class="wow fadeInUp animated" data-wow-delay=".6s">
+            I'm Geoff, a Python developer.  I love creating and learning new skills 💡<br>I also have a thing for food 🍝
+          </h2>
+          <a class="btn-lines dark light wow fadeInUp animated btn btn-default btn-green hvr-bounce-to-right"
+            data-wow-delay=".9s" style="width: 150px" href="https://www.linkedin.com/in/geoffrey-martin-728174261/" target="_blank">LinkedIn</a>
+                    <a class="btn-lines dark light wow fadeInUp animated btn btn-default btn-green hvr-bounce-to-right"
+            data-wow-delay=".9s" style="width: 150px" href="https://github.com/geoffm39" target="_blank">Github</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/#main-hero-->
+
+<!--
+==================================================
+About Section Start
+================================================== -->
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-6">
+        <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
+          <h2>
+            ABOUT ME
+          </h2>
+          <p>
+            Hello, I'm a self-taught software developer based in Melbourne, Australia.  I have always loved creating and tinkering
+            with different technologies, driving me to constantly learn new skills.
+          </p>
+          <p>
+            Coming from a successful career as a chef, my passion for creating software and IoT devices to solve problems and automate tasks has led me to an exciting
+            new chapter in my life.  My career as a chef has taught me how to be productive, communicate with others, and work well in a team.
+          </p>
+        </div>
+
+      </div>
+      <div class="col-md-6 col-sm-6">
+        <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+          <img src="{{ url_for('static', filename='/images/about/pc-code.png') }}" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section> <!-- /#about -->
+
+<!--
+==================================================
+Skills Section Start
+================================================== -->
+<section id="feature">
+  <div class="container">
+    <div class="section-heading">
+      <h1 class="title wow fadeInDown" data-wow-delay=".3s">My Skills & Tools</h1>
+      <p class="wow fadeInDown" data-wow-delay=".5s">
+        Some of my skills and tools I use bring my ideas to life:
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-lg-4">
+        <div class="media wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+          <div class="media-left">
+            <div class="icon">
+            <i class="devicon-python-plain"></i>
+            </div>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Python</h4>
+            <p>Good knowledge of Python, including GUI using Tkinter, to write organised and clean code.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="600ms">
+          <div class="media-left">
+            <div class="icon">
+             <i class="devicon-flask-original"></i>
+            </div>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Flask</h4>
+            <p>Use of Flask and Jinja for the backend of websites, and for RESTful API.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="900ms">
+          <div class="media-left">
+            <div class="icon">
+              <i class="devicon-sqlalchemy-plain"></i>
+            </div>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">SQLAlchemy</h4>
+            <p>Use SQLAlchemy, SQLite and PostgreSQL for database queries and CRUD operations.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1200ms">
+          <div class="media-left">
+            <div class="icon">
+              <i class="devicon-selenium-original"></i>
+            </div>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Selenium</h4>
+            <p>Web scraping and data parsing using Selenium and BeautifulSoup.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1500ms">
+          <div class="media-left">
+            <div class="icon">
+              <i class="devicon-pandas-original"></i>
+            </div>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Pandas</h4>
+            <p>Analysis and manipulation of data using Pandas and Numpy.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1800ms">
+          <div class="media-left">
+            <div class="icon">
+              <i class="fa-solid fa-chart-simple"></i>
+            </div>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Seaborn</h4>
+            <p>Data visualisation and linear regression with Matplotlib, Plotly, Seaborn and Scikit-Learn.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1800ms">
+          <div class="media-left">
+            <div class="icon">
+              <i class="devicon-css3-plain"></i>
+            </div>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">CSS</h4>
+            <p>Basic knowledge of CSS, along with Bootstrap to create responsive and well-designed websites.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1800ms">
+          <div class="media-left">
+            <div class="icon">
+              <i class="devicon-html5-plain"></i>
+            </div>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">HTML5</h4>
+            <p>Basic understanding of HTML for creating websites and data parsing.</p>
+          </div>
+        </div>
+      </div>
+            <div class="col-sm-6 col-lg-4">
+        <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1800ms">
+          <div class="media-left">
+            <div class="icon">
+              <i class="devicon-github-original"></i>
+            </div>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Git</h4>
+            <p>Use of Git and Github for version control, and collaborating with others on open source projects.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> <!-- /#feature -->
+}
+
+<!--
+==================================================
+Projects Start
+================================================== -->
+<section id="works" class="works">
+  <div class="container">
+    <div class="section-heading">
+      <h1 class="title wow fadeInDown" data-wow-delay=".3s">Projects</h1>
+      <p class="wow fadeInDown" data-wow-delay=".5s">
+        A collection of some of my recent projects.<br>Click on the name for more details.
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-6">
+        <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
+          <div class="img-wrapper">
+            <img src="{{ url_for('static', filename='/images/portfolio/item-1.jpg') }}" class="img-fluid" alt="this is a title">
+            <div class="overlay">
+              <div class="buttons">
+                <a target="_blank" href="https://github.com/geoffm39">Live</a>
+                <a target="_blank" href="https://github.com/geoffm39">Github</a>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <h4>
+              <a href="{{ url_for('project', project_id=1) }}">
+                Project 1
+              </a>
+            </h4>
+            <p>
+              Short description
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
+          <div class="img-wrapper">
+            <img src="{{ url_for('static', filename='/images/portfolio/item-2.jpg') }}" class="img-fluid" alt="this is a title">
+            <div class="overlay">
+              <div class="buttons">
+                <a target="_blank" href="https://github.com/geoffm39">Live</a>
+                <a target="_blank" href="https://github.com/geoffm39">Github</a>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <h4>
+              <a href="{{ url_for('project', project_id=2) }}">
+                Project 2
+              </a>
+            </h4>
+            <p>
+              Short description
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
+          <div class="img-wrapper">
+            <img src="{{ url_for('static', filename='/images/portfolio/item-3.jpg') }}" class="img-fluid" alt="">
+            <div class="overlay">
+              <div class="buttons">
+                <a target="_blank" href="https://github.com/geoffm39">Live</a>
+                <a target="_blank" href="https://github.com/geoffm39">Github</a>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <h4>
+              <a href="{{ url_for('project', project_id=3) }}">
+                Project 3
+              </a>
+            </h4>
+            <p>
+              Short description
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="600ms">
+          <div class="img-wrapper">
+            <img src="{{ url_for('static', filename='/images/portfolio/item-4.jpg') }}" class="img-fluid" alt="">
+            <div class="overlay">
+              <div class="buttons">
+                <a target="_blank" href="https://github.com/geoffm39">Live</a>
+                <a target="_blank" href="https://github.com/geoffm39">Github</a>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <h4>
+              <a href="{{ url_for('project', project_id=4) }}">
+                Project 4
+              </a>
+            </h4>
+            <p>
+              Short description
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="900ms">
+          <div class="img-wrapper">
+            <img src="{{ url_for('static', filename='/images/portfolio/item-5.jpg') }}" class="img-fluid" alt="">
+            <div class="overlay">
+              <div class="buttons">
+                <a target="_blank" href="https://github.com/geoffm39">Live</a>
+                <a target="_blank" href="https://github.com/geoffm39">Github</a>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <h4>
+              <a href="{{ url_for('project', project_id=5) }}">
+                Project 5
+              </a>
+            </h4>
+            <p>
+              Short description
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="1200ms">
+          <div class="img-wrapper">
+            <img src="{{ url_for('static', filename='/images/portfolio/item-6.jpg') }}" class="img-fluid" alt="">
+            <div class="overlay">
+              <div class="buttons">
+                <a target="_blank" href="https://github.com/geoffm39">Live</a>
+                <a target="_blank" href="https://github.com/geoffm39">Github</a>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            <h4>
+              <a href="{{ url_for('project', project_id=6) }}">
+                Project 6
+              </a>
+            </h4>
+            <p>
+              Short description
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section> <!-- #projects -->
+
+{% include "footer.html" %}

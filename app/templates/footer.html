@@ -1,0 +1,108 @@
+        <!--
+        ==================================================
+        Call To Action Section Start
+        ================================================== -->
+        <section id="call-to-action">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block">
+                            {% if contact_page %}
+                                <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">get in touch</h2>
+                                <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">I look forward to hearing from you!</p>
+                                {% else %}
+                                <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">get in touch</h2>
+                                <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Have any questions or want to work together?</p>
+                                <a href="{{ url_for('contact') }}" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">let's have a chat</a>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--
+        ==================================================
+        Footer Section Start
+        ================================================== -->
+        <footer id="footer">
+            <div class="container">
+                <div class="row content-justify-between">
+                    <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
+                        <p class="copyright">Copyright © 2023 Designed and Developed by<br>
+                            <a href="https://github.com/geoffm39" target="_blank">Geoff Martin</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <!-- Contact links -->
+                        <ul class="social text-center text-md-right text-lg-right">
+                            <li>
+                                <a href="https://www.linkedin.com/in/geoffrey-martin-728174261/" class="Linkedin" target="_blank">
+                                    <i class="ion-social-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/geoffm39" class="Github" target="_blank">
+                                    <i class="devicon-github-original"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://wwww.fb.com/themefisher" class="Instagram" target="_blank">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/geoff.martin.140/" class="Facebook" target="_blank">
+                                    <i class="ion-social-facebook"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer> <!-- /#footer -->
+
+            <!-- Template Javascript Files
+            ================================================== -->
+            <!-- jquery -->
+            <script src="{{ url_for('static', filename='/plugins/jQurey/jquery.min.js') }}"></script>
+            <!-- Form Validation -->
+            <script src="{{ url_for('static', filename='/plugins/form-validation/jquery.form.js') }}"></script>
+            <script src="{{ url_for('static', filename='/plugins/form-validation/jquery.validate.min.js') }}"></script>
+            <!-- slick slider -->
+            <script src="{{ url_for('static', filename='/plugins/slick/slick.min.js') }}"></script>
+            <!-- bootstrap js -->
+            <script src="{{ url_for('static', filename='/plugins/bootstrap/bootstrap.min.js') }}"></script>
+            <!-- wow js -->
+            <script src="{{ url_for('static', filename='/plugins/wow-js/wow.min.js') }}"></script>
+            <!-- slider js -->
+            <script src="{{ url_for('static', filename='/plugins/slider/slider.js') }}"></script>
+            <!-- Fancybox -->
+            <script src="{{ url_for('static', filename='/plugins/facncybox/jquery.fancybox.js') }}"></script>
+            <!-- template main js -->
+            <script src="{{ url_for('static', filename='/js/main.js') }}"></script>
+            <script>
+            // Add an event listener to all anchor links on the page
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    // Get the target element's id from the href attribute
+                    const targetId = this.getAttribute('href').substring(1);
+
+                    // Find the target element by its id
+                    const targetElement = document.getElementById(targetId);
+
+                    // Scroll smoothly to the target element
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start' // 'start' is the default and scrolls to the top of the element
+                        });
+                    }
+                });
+            });
+        </script>
+ 	</body>
+</html>
